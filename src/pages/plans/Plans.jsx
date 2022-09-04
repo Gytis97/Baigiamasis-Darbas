@@ -22,7 +22,6 @@ const Plans = () => {
                 <h2>/mėn</h2>
 
                 {features.map(({ feature, available }, index) => {
-                  console.log(index);
                   return (
                     <p key={index} className={available ? "" : "disabled"}>
                       {feature}
