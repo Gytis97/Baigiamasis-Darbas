@@ -10,8 +10,35 @@ const Contact = () => {
   return (
     <>
       <Header title="Susisiekite" image={HeaderImage}>
-        Jeigu kilo klausimu susijusių su sporto klubu, ar turite įdėjų kurias
-        norėtumėte įgyvendinti kartu su mumis - rašykite apačioje.
+        <p className="contact__headerp">
+          Jeigu kilo klausimu susijusių su sporto klubu, ar turite įdėjų kurias
+          norėtumėte įgyvendinti kartu su mumis - rašykite apačioje.
+        </p>
+
+        <form>
+          <div className="input__name">
+            <input
+              type="text"
+              name="First Name"
+              placeholder="Jūsų Vardas"
+              required
+            />
+          </div>
+          <div className="input__email">
+            <input
+              type="email"
+              name="Email Address"
+              placeholder="Jūsų el. paštas"
+              required
+            />
+          </div>
+          <div className="message__input">
+            <textarea rows="4" placeholder="Jūsų tekstas"></textarea>
+          </div>
+          <div className="input__btn">
+            <button className="btn">Siųsti</button>
+          </div>
+        </form>
       </Header>
       <section className="contact">
         <div className="container contact__container">

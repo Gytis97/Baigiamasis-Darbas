@@ -27,6 +27,67 @@
   border-color: var(--color-gray-100);
 }
 
+.contact__headerp {
+  display: flex;
+  padding-bottom: 1rem;
+  padding-top: -3rem;
+  font-size: 0.85rem;
+  margin-top: -0.7rem;
+}
+.input__name {
+  margin-top: -11px;
+}
+
+.input__name input[type="text"] {
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+  margin-bottom: 0.7rem;
+  background-color: #ffb116;
+  opacity: 60%;
+  color: Black;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.input__email {
+  margin-top: 13px;
+}
+.input__email input[type="email"] {
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+  background-color: #ffb116;
+  opacity: 60%;
+  color: black;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.message__input {
+  padding-top: 1.3rem;
+}
+.message__input textarea {
+  padding: 0.1rem 0.6rem 0.3rem 0.6rem;
+  background-color: #ffb116;
+  width: 300px;
+  opacity: 60%;
+  color: black;
+  border-radius: 4px;
+}
+.input__btn {
+  margin-top: 0.5rem;
+}
+
+.input__btn button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 10%;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+.inputname input,
+::placeholder {
+  padding: 0.2rem;
+  text-align: left;
+}
+
 @media screen and (max-width: 600px) {
   .contact__wrapper {
     gap: 1.5rem;
