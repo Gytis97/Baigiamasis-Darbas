@@ -36,7 +36,7 @@ const FeedBack = () => {
           title="Atsiliepimai"
           className="feedback__head"
         />
-        <Card className="feedback">
+        <Card id="names" className="feedback">
           <div className="feedback__avatar">
             <img src={avatar} alt={name} />
           </div>
@@ -48,7 +48,11 @@ const FeedBack = () => {
           <button className="feedback__btn" onClick={prevFeedbackHandler}>
             <IoIosArrowDropleftCircle />
           </button>
-          <button className="feedback__btn" onClick={nextFeedbackHandler}>
+          <button
+            className="feedback__btn"
+            onClick={nextFeedbackHandler}
+            id="btn"
+          >
             <IoIosArrowDroprightCircle />
           </button>
         </div>

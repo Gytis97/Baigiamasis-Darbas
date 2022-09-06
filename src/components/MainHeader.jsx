@@ -13,7 +13,7 @@ const MainHeader = () => {
             <br />
             Registruokis dabar!
           </p>
-          <Link to="/planai" className="btn lg">
+          <Link id="button" to="/planai" className="btn lg">
             Treniruočių planai
           </Link>
         </div>

@@ -14,7 +14,7 @@ const Programs = () => {
         <div className="programs__wrapper">
           {programs.map(({ id, icon, title, info }) => {
             return (
-              <Card className="programs__program" key={id}>
+              <Card className="programs__program" key={id} id={id}>
                 <span>{icon}</span>
                 <h4>{title}</h4>
                 <small>{info}</small>

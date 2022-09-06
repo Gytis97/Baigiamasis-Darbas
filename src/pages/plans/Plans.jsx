@@ -28,7 +28,9 @@ const Plans = () => {
                     </p>
                   );
                 })}
-                <button className="btn lg">Pasirinkti Planą</button>
+                <button id="plansbtn" className="btn lg">
+                  Pasirinkti Planą
+                </button>
               </Card>
             );
           })}
