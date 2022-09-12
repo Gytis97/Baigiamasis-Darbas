@@ -3,6 +3,11 @@
   place-items: center;
 }
 
+.header__content .header__text {
+  margin-top: -1.7rem;
+  padding-bottom: 1rem;
+}
+
 .contact__wrapper {
   width: fit-content;
   display: flex;
@@ -27,14 +32,6 @@
   border-color: var(--color-gray-100);
 }
 
-.contact__headerp {
-  display: flex;
-  padding-bottom: 1rem;
-  padding-top: -3rem;
-  font-size: 0.85rem;
-  margin-top: -0.7rem;
-}
-
 .input__name {
   display: flex;
   justify-content: center;
@@ -57,7 +54,7 @@
   text-align: center;
   padding-top: 0.5rem;
 }
-.input__email input[type="email"] {
+.input__email input {
   padding: 0.3rem 0.8rem 0.3rem 0.8rem;
   background-color: #ffb116;
   opacity: 60%;
@@ -94,11 +91,6 @@
   width: 10%;
   padding: 0.5rem 0rem 0.5rem 0rem;
 }
-.inputname input,
-::placeholder {
-  padding: 0.2rem;
-  text-align: left;
-}
 
 .validation {
   display: none;
@@ -111,7 +103,53 @@
   color: red;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__content .header__text {
+    padding-top: 0.6rem;
+    font-size: 16px;
+  }
+
+  .input__btn button {
+    padding: 0.5rem 2.4rem 0.5rem 2.4rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .header__container-bg img {
+    display: flex;
+    justify-content: center;
+    height: 370px;
+  }
+
+  .header__content .header__text {
+    font-size: 12px;
+    margin-top: -4rem;
+  }
+
+  .forms {
+    padding-top: 0.5rem;
+  }
+
+  .message__input textarea {
+    width: 300px;
+  }
+
+  .input__btn {
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+  }
+
+  .input__btn button {
+    padding: 0.6rem 2.2rem 0.6rem 2.2rem;
+  }
+
+  .show {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: red;
+  }
+
   .contact__wrapper {
     gap: 1.5rem;
   }

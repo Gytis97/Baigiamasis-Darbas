@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import HeaderImage from "../../images/header_bg_2.jpg";
-import { MdEmail } from "react-icons/md";
+import { BsInstagram } from "react-icons/bs";
 import { BsMessenger } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { useState } from "react";
@@ -40,13 +40,13 @@ const Contact = () => {
 
   return (
     <>
-      <Header title="" image={HeaderImage}>
-        <p className="contact__headerp">
+      <Header image={HeaderImage}>
+        <p className="header__text">
           Jeigu kilo klausimu susijusių su sporto klubu, ar turite įdėjų kurias
           norėtumėte įgyvendinti kartu - rašykite apačioje.
         </p>
 
-        <form>
+        <form className="forms">
           <div className="input__name">
             <input
               id="textInput"
@@ -94,7 +94,7 @@ const Contact = () => {
         <div className="container contact__container">
           <div className="contact__wrapper">
             <a href="mailto:" target="_blank" rel="noreferrer noopener">
-              <MdEmail />
+              <BsInstagram />
             </a>
             <a href="mailto:" target="_blank" rel="noreferrer noopener">
               <BsMessenger />
